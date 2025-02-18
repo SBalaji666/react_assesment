@@ -1,4 +1,4 @@
-import HierarchicalSalesTable from "./components/Table";
+import HierarchicalSalesTable from "./components/HierarchicalSalesTable";
 
 function App() {
   return (

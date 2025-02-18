@@ -130,7 +130,7 @@ const HierarchicalSalesTable = () => {
     return null;
   };
 
-  const renderRows = (rows, depth = 0) => {
+  const renderRows = (rows, depth = 1) => {
     return rows.flatMap((row) => {
       const rowVariance = variances[row.id] || 0;
       const rowElements = (
