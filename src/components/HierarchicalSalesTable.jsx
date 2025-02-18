@@ -1,24 +1,7 @@
 import { useState } from "react";
-  const initialData = [
-    {
-      id: "electronics",
-      label: "Electronics",
-      originalValue: 1500,
-      children: [
-        { id: "phones", label: "Phones", originalValue: 800 },
-        { id: "laptops", label: "Laptops", originalValue: 700 }
-      ]
-    },
-    {
-      id: "furniture",
-      label: "Furniture",
-      originalValue: 1000,
-      children: [
-        { id: "tables", label: "Tables", originalValue: 300 },
-        { id: "chairs", label: "Chairs", originalValue: 700 }
-      ]
-    }
-  ];
+import data from "../data.json"
+
+const initialData = data.rows
 
 const HierarchicalSalesTable = () => {
   const calculateCurrentValues = (rows) => {
